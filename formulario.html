@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="index.html">
+    <title>Login</title>
+</head>
+<body class="uno">
+    
+        <h1>LOGIN</h1>
+        <img class="logo_formulario" src="/img/cocinera_logo.png" alt="logo">
+        <p> Por favor llene los campos con la información requerida.</p>
+        <form method="post" action='https://funcion-main.web.app/'>
+          <fieldset>
+            <label for="first-name">Nombre: <input id="first-name" name="first-name" type="text" required /></label>
+            <label for="last-name">Apellido: <input id="last-name" name="last-name" type="text" required /></label>
+            <label for="email">Email: <input id="email" name="email" type="email" required /></label>
+            <label for="new-password">Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+          </fieldset>
+          <fieldset>
+            <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" /> Cuenta cliente</label>
+            <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Administración </label>
+            <label for="terms-and-conditions">
+              <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> Acepto los <a href="https://www.freecodecamp.org/news/terms-of-service/">Terminos y condiciones</a>
+            </label>
+          </fieldset>
+          <fieldset>
+            <label for="profile-picture">Sube una foto de perfil: <input id="profile-picture" type="file" name="file" /></label>
+            <label for="age">Ingrese su edad (años): <input id="age" type="number" name="age" min="13" max="120" /></label>
+            <label for="referrer">¿Cómo te enteraste de nosotros?
+              <select id="referrer" name="referrer">
+                <option value="">(Seleccione una opción)</option>
+                <option value="1">Internet</option>
+                <option value="2">Redes sociales</option>
+                <option value="3">Voz a voz</option>
+                <option value="4">Otra</option>
+              </select>
+            </label>
+            <label for="bio">Déjanos tu opinión :
+              <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Déjanos tu opinión para nosotros es muy importante ..."></textarea>
+            </label>
+          </fieldset>
+          <input type="submit" value="Entrar" />
+        </form>
+      
+</body>
+</html>
